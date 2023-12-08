@@ -87,7 +87,7 @@ app.post('/signin', async (req, res) => {
         await client.close();
     }
 });
-app.listen(port, 0.0.0.0, () => {
+app.listen(port, '0.0.0.0', () => {
   // ...
 });
 
