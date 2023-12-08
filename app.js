@@ -24,7 +24,7 @@ app.get('/register', (req, res) => {
 // Routes for signup and signin
 app.post('/signup', async (req, res) => {
     const { username, password } = req.body;
-
+ 
     // Validate input
     if (!username || !password) {
         return res.status(400).json({ message: 'Username and password are required.' });
