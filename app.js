@@ -87,5 +87,8 @@ app.post('/signin', async (req, res) => {
         await client.close();
     }
 });
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});
 
 
