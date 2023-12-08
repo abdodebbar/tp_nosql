@@ -4,7 +4,6 @@ const { MongoClient } = require('mongodb');
 
 const app = express();
 const port = 2854;
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.set('view engine', 'ejs');
