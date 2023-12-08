@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 
-const url = 'bzmo5t8ubb3y7okm3hng-mongodb.services.clever-cloud.com';
+const url = 'mongodb://uka76qszdwijhwp7d5fl:ZOF9dpdR6QIdeQYsLK5@bzmo5t8ubb3y7okm3hng-mongodb.services.clever-cloud.com';
 const dbName = 'bzmo5t8ubb3y7okm3hng';
 
 app.get('/', (req, res) => {
@@ -90,6 +90,6 @@ app.post('/signin', async (req, res) => {
 });
 
 // Start the server
-/* app.listen(port, () => {
+ app.listen(port,'0.0.0.0', () => {
     console.log(`Server is running on http://localhost:${port}`);
-}); */
+}); 
